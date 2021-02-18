@@ -15,8 +15,9 @@ function passwordLength() {
   length = parseInt(prompt("How many characters do you want?"))
   if (length < 8 || length > 128 || isNaN(length)) {
     alert("Please enter a number in between 8 and 128")
+    passwordLength()
   }
-  return length
+  
 }
 
 function passwordOptions() {
