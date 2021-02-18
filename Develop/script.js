@@ -41,7 +41,7 @@ function passwordOptions() {
 
 }
 
-
+//making our characters random
 function randomChar(array){
   var randomindex = Math.floor(Math.random()*array.length); 
   var randomelement = array[randomindex];
@@ -54,8 +54,12 @@ function generatePassword() {
   var possiblechars = [];
   console.log(length);
   console.log(options);
+  console.log(possiblechars);
+  console.log(result);
   
-  
+  //here we use some logic to define the options
+  //posible chars for lowers, uppers, numbers, specials:
+  //we are using the .concat property so we can see them as a single array
   if (options.lowers) {
     possiblechars=possiblechars.concat(lowersChar);
   console.log(possiblechars);
@@ -73,6 +77,7 @@ function generatePassword() {
     console.log(possiblechars);
   }
 
+// here we figure out the random selection of options
   for (var i = 0; i < length; i++) {
     var possiblechar= randomChar(possiblechars);
     console.log(possiblechar);
