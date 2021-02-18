@@ -17,6 +17,7 @@ function passwordLength() {
     alert("Please enter a number in between 8 and 128")
     passwordLength()
   }
+  return length;
   
 }
 
@@ -36,12 +37,15 @@ function passwordOptions() {
     numbers,
     specials,
   }
+  
 
 }
+
+
 function randomChar(array){
   var randomindex = Math.floor(Math.random()*array.length); 
   var randomelement = array[randomindex];
-  return randomelement
+  return randomelement;
 }
 function generatePassword() {
   var length = passwordLength();
