@@ -40,4 +40,4 @@ ____________________________________
 I Hope you find the application handy and please let me know if you have any questions or feedback!
 ____________________________________
 
-![alt text](./Images/screenshot1.PNG)
+![alt text](./develop/Images/screenshot1.PNG)
